@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
 /* codede by zzx 1.1 */
+
 int main()
 {
     char s[100];
