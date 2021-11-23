@@ -17,7 +17,7 @@ xjtu 2020 datastruct codes for reference only
 3.4 大顶堆 timeout   
 ## 第四章 图
 4.1 图的遍历 all accepted   
-4.2 最短路径   
+4.2 最短路径 all accepted   
 4.3 最小生成树   
 ## 第五章 排序
 5.1 希尔排序   
