@@ -18,7 +18,7 @@ xjtu 2020 datastruct codes for reference only
 ## 第四章 图
 4.1 图的遍历 all accepted   
 4.2 最短路径 all accepted   
-4.3 最小生成树   
+4.3 最小生成树 all accepted   
 ## 第五章 排序
 5.1 希尔排序   
 5.2 2-路归并排序   
