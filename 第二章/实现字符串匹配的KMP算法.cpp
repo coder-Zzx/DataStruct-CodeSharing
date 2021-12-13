@@ -8,12 +8,14 @@ int len(char *p)
     for (;*(p+n)!='\0';n++);
     return n;
 }
+
 void cal_next(char *str, int *next, int len)
 {
-    // int len = strlen(a); ///先求字符串的长度，便于循环赋值
+    // int len = strlen(a); ///
+    
     int i = 0, j = -1;
     next[0] = -1;
-    while (i < len)
+    while (i < len-1)
     {
         if (j == -1 || str[i] == str[j])
         {
@@ -23,6 +25,7 @@ void cal_next(char *str, int *next, int len)
             j = next[j];
     }
 }
+
 int KMP(char *str, int slen, char *ptr, int plen)
 {
     int *next = new int[plen];
@@ -41,6 +44,7 @@ int KMP(char *str, int slen, char *ptr, int plen)
     }
     return 0;
 }
+
 int main()
 {
     char s[20] = {'a','b','a','a','b','a','c','a','b','a','b','d','e','a','d','c','d','e'};
