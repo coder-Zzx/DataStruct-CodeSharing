@@ -1,6 +1,7 @@
 #include <iostream>
+#include <queue>
+
 using namespace std;
-/* coded by zzx 3.3 */
 
 class AVL
 {
@@ -19,56 +20,6 @@ public:
     int getHeight(AVL *avl);
     int Max(int a, int b);
     AVL *FindMin(AVL *avl);
-};
-
-class qNode
-{
-public:
-    AVL *avl=new AVL();
-    qNode *next;
-    qNode(AVL *_avl)
-    {
-        avl=_avl;
-        next=NULL;
-    }
-};
-
-class queue
-{
-public:
-    qNode *f;
-    qNode *r;
-    queue()
-    {
-        f=NULL;
-        r=NULL;
-    }
-    void push(AVL *avl)
-    {
-        if (f==NULL)
-        {
-            f=new qNode(avl);
-            r=f;
-            return;
-        }
-        qNode q=new qNode(avl);
-        r->next=p;
-        r=p;
-    }
-    void pop()
-    {
-        qNode p=f->next;
-        f->next=p->next;
-        if (p==r)
-        {
-            r=f;
-        }
-        delete(p);
-    }
-    AVL * front()
-    {
-        return f;
-    }
 };
 
 AVL *AVL::Insert(AVL *avl, int x)
@@ -286,7 +237,7 @@ int AVL::Max(int a, int b)
 }
 
 void LevelOrderTraversal(AVL* T){
-			queue queue;
+			queue<AVL*> queue;
 			AVL* cur = T;
 			//头结点入队 
 			queue.push(cur);
@@ -312,13 +263,19 @@ int main()
     AVL *tree = new AVL;
     int size=1;
     int *vals=new int[100];
-    while (true)
+    /**********************************/
+    // while (true)
+    // {
+    //     cin >> vals[size-1];
+    //     ++size;
+    //     // tree->Insert(tree, val);
+    //     if (getchar() == '\n')
+    //         break;
+    // }
+    /**********************************/
+    for (;size<=5;size++)
     {
-        cin >> vals[size-1];
-        ++size;
-        // tree->Insert(tree, val);
-        if (getchar() == '\n')
-            break;
+        cin>>vals[size-1];
     }
     tree=tree->Create(vals,size-1);
     LevelOrderTraversal(tree);
