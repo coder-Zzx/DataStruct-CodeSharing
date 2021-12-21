@@ -9,7 +9,9 @@
     >> 例如：当T=10，各件物品的体积{1,8,4,3,5,2}时，可找到下列4组  解：(1,4,3,2)，(1,4,5)，(8,2)，(3,5,2)。
 
 * 主要代码
-    > 代码放在[这里](https://github.com/coder-Zzx/DataStruct-CodeSharing/blob/main/DataStructExperiment/KnapsackProblem.cpp)
+    > 代码放在[这里](https://github.com/coder-Zzx/DataStruct-CodeSharing/blob/main/DataStructExperiment/KnapsackProblem.cpp)   
+    > 核心代码如下   
+    > ![](https://s3.bmp.ovh/imgs/2021/12/ffc7f964bdd9ba1b.png)
     >> 思路描述：利用贪心算法，
     >>1. 设置一个栈，用来存放放入背包的物品小标，
     >>2. 当栈非空且有物品未被放入背包中时，循环检测放入背包的物品   的重量，直至所有物品都被放入过。
