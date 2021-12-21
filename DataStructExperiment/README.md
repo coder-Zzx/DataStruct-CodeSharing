@@ -40,7 +40,9 @@
     > 编写求解并输出此问题的一个合法布局的程序。
 
 * 主要代码
-    > 代码放在[这里](https://github.com/coder-Zzx/DataStruct-CodeSharing/blob/main/DataStructExperiment/8QueensProblem.cpp)             
+    > 代码放在[这里](https://github.com/coder-Zzx/DataStruct-CodeSharing/blob/main/DataStructExperiment/8QueensProblem.cpp)       
+    > 核心代码如下   
+    > ![](https://s3.bmp.ovh/imgs/2021/12/2afc5186267e773e.png)   
     >> 思路描述：利用回溯法
     >> 1. 设置棋盘，首先在第一列放置一个皇后，然后检查是否合法；
     >> 2. 如果合法则转向下一行；不合法则将该位置重置，然后转向下一列；
