@@ -100,7 +100,10 @@
     > 迷宫实验是取自心理学的一个古典实验。在该实验中，把一只老鼠从一个无顶大盒子的门放入，在盒中设置了许多墙，对行进方向形成了多处阻挡。盒子仅有一个出口，在出口处放置一块奶酪，吸引老鼠在迷宫中寻找道路以到达出口。对同一只老鼠重复进行上述实验，一直到老鼠从入口到出口，而不走错一步。老鼠经多次试验终于得到它学习走迷宫的路线。
 
 * 主要代码
-    > 代码放在[这里](https://github.com/coder-Zzx/DataStruct-CodeSharing/blob/main/DataStructExperiment/MazeProblem.c)
+    > 代码放在[这里](https://github.com/coder-Zzx/DataStruct-CodeSharing/blob/main/DataStructExperiment/MazeProblem.c)   
+    > 核心代码如下   
+    > ![](https://s3.bmp.ovh/imgs/2021/12/f6aa33e3309860a4.png)      
+    > ![](https://s3.bmp.ovh/imgs/2021/12/e6d51b643ea2fcc8.jpeg)   
     >> 思路描述：
     >> 1. 用一个box存放位置和下一可走相邻方位，用1，0分别表示墙和路
     >>      1. i，j，di分别表示横纵坐标和方位
