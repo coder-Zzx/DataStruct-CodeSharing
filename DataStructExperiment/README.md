@@ -83,7 +83,9 @@
     > 分别采用二叉链表和顺序表作存储结构，实现对二叉排序树与平衡二叉树的操作。
 
 * 主要代码
-    > 代码放在[这里](https://github.com/coder-Zzx/DataStruct-CodeSharing/blob/main/DataStructExperiment/BinarySearchTree&BalencedBinaryTree.cpp)
+    > 代码放在[这里](https://github.com/coder-Zzx/DataStruct-CodeSharing/blob/main/DataStructExperiment/BinarySearchTree&BalencedBinaryTree.cpp)   
+    > 核心代码如下   
+    > ![](https://s3.bmp.ovh/imgs/2021/12/ad098c75252465f6.png)   
     >> 由于这道题基本就是书上的东西，所以思路就不写了
 
 * 结果展示
