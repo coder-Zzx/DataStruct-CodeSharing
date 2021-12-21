@@ -1,6 +1,8 @@
 /* 实验十三 迷宫问题 */
 
+#include <iostream>
 #include <stdio.h>
+using namespace std;
 #define MaxSize 100
 #define M 8
 #define N 8
@@ -50,10 +52,10 @@ int mgpath(int xi, int yi, int xe, int ye) //求解路径为:(xi,yi)->(xe,ye)
             for (k = 0; k <= st.top; k++)
             {
                 printf("\t(%d,%d)", st.data[k].i, st.data[k].j);
-                if ((k + 1) % 5 == 0) //每输出5个元素，就换行
-                    printf("\n");
+                if ((k + 1) % 5 == 0)  //每输出5个元素，就换行
+                    cout<<endl;
             }
-            printf("\n");
+            cout<<endl;
             return 0; //找到路径之后，将所有路径打印出来，然后，程序结束
         }
         find = 0;
@@ -126,22 +128,22 @@ int main()
         {
             if (mg[t][k] == 1)
             {
-                printf("#");
+                cout<<"#";
             }
             else if (mg[t][k] == 0)
             {
-                printf(" ");
+                cout<<" ";
             }
             else
             {
-                printf("o");
+                cout<<"o";
             }
         }
         if (k == 10)
         {
-            printf("\n");
+            cout<<endl;
         }
     }
-    printf("\n此时，o所代表的图标为迷宫行走路径!!!\n");
+    cout<<"\n此时，o所代表的图标为迷宫行走路径!!!\n";
     return 0;
 }
